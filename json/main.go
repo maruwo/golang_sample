@@ -12,11 +12,11 @@ import (
 )
 
 type MyStructSub struct {
-	Sub1 int32
-	Sub2 uint16
-	Rsb1 uint16
-	Sub3 uint8
-	Rsb2 [3]uint8
+	Sub1 int32    `json:"sub1"`
+	Sub2 uint16   `json:"sub2"`
+	Rsb1 uint16   `json:"rsv1"`
+	Sub3 uint8    `json:"sub3"`
+	Rsb2 [3]uint8 `json:"rsv2"`
 }
 
 type MyStruct struct {
